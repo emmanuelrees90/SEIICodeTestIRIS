@@ -6,7 +6,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatPaginatorModule } from '@angular/material/paginator';
 import { SubdivisionDataDisplayComponent } from './subdivision-data-display/subdivision-data-display.component';
+import { HttpClientModule } from '@angular/common/http';
+import { MatTableModule } from '@angular/material/table';
+import { MatSelectModule } from '@angular/material/select';
+import { MatSortModule } from '@angular/material/sort';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
+
 
 @NgModule({
   declarations: [
@@ -18,7 +26,13 @@ import { SubdivisionDataDisplayComponent } from './subdivision-data-display/subd
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule,
+    MatPaginatorModule,
+    MatTableModule,
+    MatSelectModule,
+    MatSortModule,
+    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
